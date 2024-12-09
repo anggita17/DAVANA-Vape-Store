@@ -1,0 +1,384 @@
+/* Reset dasar */
+body, h1, h2, h3, p, ul, li, a, table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #da93f0;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/image/background.jpg') no-repeat center center/cover;
+    color: #bd4bda;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 span {
+    color: #d764fa;
+}
+
+.hero .btn-primary {
+    background-color: #d76de6;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-info, .accessories, .pricing {
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.price-table th {
+    background-color: #dc6ae0;
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer .social-links a {
+    color: #d35bb9;
+}
+/* Dropdown styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.nav-links .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links .dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links .dropdown li a {
+    padding: 0.5rem 1rem;
+    color: #333;
+    display: block;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    color: #ff7f50;
+}
+
+.dropdown li a:hover {
+    background-color: #ff7f50;
+    color: white;
+}
+.hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 4rem 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 2rem;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.hero .btn-primary {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: #db71fc;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e26bfa;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .price-table {
+        font-size: 0.9rem;
+    }
+}
+/* Gaya dasar untuk navigasi */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+
+.nav-links .dropdown {
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0.5rem 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+}
+
+.nav-links .dropdown li {
+    margin: 0;
+}
+
+.nav-links .dropdown li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.nav-links .dropdown li a:hover {
+    background-color: #ff50e8;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.nav-links > li:hover .dropdown {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background-color: #f9f9f9; 
+}
+
+
+.container {
+    max-width: 800px; 
+    text-align: center; 
+    padding: 20px;
+    background-color: #e6c6f5; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+
+h1, h2, h3 {
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+
+p {
+    color: #555; 
+    line-height: 1.6;
+    margin-bottom: 15px; 
+}
+
+
+a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        width: 90%; 
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.2rem; 
+    }
+    
+    p {
+        font-size: 0.9rem; 
+    }
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    padding: 0;
+}
+
+
+.social-links li {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.social-links i {
+    font-size: 30px; 
+    margin-right: 10px; 
+}
+
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff; 
+    font-size: 16px; 
+}
+
+.social-links a:hover {
+    text-decoration: underline; 
+}
